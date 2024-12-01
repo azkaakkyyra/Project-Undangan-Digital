@@ -1,0 +1,728 @@
+body{
+    margin: 0;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    bottom: 10px;
+    right: 3%;
+    width: 25%;
+    background-color: #b84949;
+    padding: 10px 10px;
+    padding-right: -5px;
+    margin: 0px 5px;
+    z-index: 2;
+    border-radius: 30px;
+
+}
+
+.nav-ikon{
+    display: flex;
+    align-self: center;
+    flex-direction: row;
+    text-align: center;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+
+.nav-ikon.active {
+    transform: scale(1.2);
+}
+
+.nav-ikon.active svg path{
+    fill: #DE9191;
+}
+
+.nav-ikon svg{
+    width: 20px;
+    height: auto;
+}
+
+.nav-ikon svg path{
+    fill: #4B2204;
+}
+
+.nav-ikon svg{
+    transition: fill 0.3s ease;
+}
+
+.nav-ikon:hover svg{
+    transform: scale(1.2);
+}
+
+.nav-ikon:hover svg path{
+    fill: #DE9191 !important;
+}
+
+.hiasan{
+    width: 65%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    display: block;
+}
+
+#cover1{
+    background-image: url(Background\ \(3\).jpg);
+    margin-top: 0;
+    width: 35%;
+    min-height: 80vh;
+    margin-left: 65%;
+    display: flex;
+    justify-content: center;
+    padding-top: 150px;
+}
+
+.hiasan img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.judul-hiasan{
+    position: fixed;
+    z-index: 2;
+    top: 15%;
+    left: 5%;
+    padding: 10px;
+    border-radius: 15px;
+    text-align: center;
+    background-color: #f1f1f152;
+}
+
+.judul-hiasan p{
+    font-size: 25px;
+    font-family: 'Allura';
+    color: #560000;
+}
+.judul-hiasan h4{
+    font-size: 20px;
+    font-family: 'Kaisei Decol';
+    color: #560000;
+}
+.content-cover{
+    background-image: url(Background\ \(3\).jpg);
+    margin-top: 0;
+    width: 35%;
+    min-height: 500vh;
+    margin-left: 65%;
+    display: flex;
+    justify-content: center;
+    padding-top: 150px;
+}
+
+.border-cover1{
+    position: absolute;
+    z-index: 1;
+    top: 20px;
+    animation: fadeIn 1s forwards;
+    left: 67%;
+    width:65px;
+    height: 65px;
+}
+
+.border-cover2{
+    position: absolute;
+    z-index: 1;
+    top: 20px;
+    animation: fadeIn 1s forwards;
+    right: 20px;
+    width:65px;
+    height: 65px;
+}
+
+.border-cover3{
+    position: absolute;
+    z-index: 1;
+    bottom: 5px;
+    animation: fadeIn 1s forwards;
+    left: 67%;
+    width: 65px;
+    height: 65px;
+}
+
+.border-cover4{
+    position: absolute;
+    z-index: 1;
+    bottom: 5px;
+    animation: fadeIn 1s forwards;
+    right: 20px;
+    width: 65px;
+    height: 65px;
+}
+
+.judul {
+    font-family: 'Kaisei Decol';
+    text-align: center;
+    background-color: #c6545488;
+    color: #560000;
+    width: 34vw;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.container-foto{
+    text-align: center;
+}
+
+.container-foto img, .container-opening img{
+    margin-bottom: 10px;
+    padding: 2px;
+    display: inline-block;
+    border: 3px solid #560000;
+}
+
+.container-foto h3, .container-opening h5{
+    color: #560000;
+    font-family: 'Allura';
+    font-size: 35px;
+    text-align: center;
+}
+
+.container-opening p, .container-home h5{
+    color: #560000;
+    font-family: 'Kaisei Decol';
+    font-size: 13px;
+    text-align: center;
+}
+
+.container-foto p, .container-opening h3{
+    color: #560000;
+    font-family: 'Kaisei Decol';
+    font-size: 20px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.foto-cover{
+    border-radius: 100px;
+    width: 105px;
+    height: auto;
+}
+
+.tmbol-cover{
+    background-color: #DE9191;
+    color: #560000;
+    font-family: 'Kaisei Decol';
+    font-size: 15px;
+    border: none;
+    padding: 10px;
+    margin-top: 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    animation: fadeIn 1s forwards;
+}
+
+.tmbol-cover:hover{
+    background-color: #560000;
+    color: #DE9191;
+    font-size: 15px;
+    font-family: 'Kaisei Decol';
+    border-radius: 5px;
+}
+
+.container-audio{
+    display: flex;
+    justify-content: left;
+    position: fixed;
+    right:  20px;
+    bottom: 10%;
+    z-index: 3;
+}
+
+.container-opening{
+    display: flex;
+    justify-content: center;
+    margin-top: 400px;
+    flex-direction: column;
+   align-items: center;
+}
+.container-opening h4{
+    font-family: 'Lobster';
+    font-size: 15px;
+    color: #560000;
+}
+.opening h2{
+    width: 34vw;
+    padding: 3px;
+    font-size: 15px;
+    text-align: center;
+    background-color: #ab5151;
+    color: #560000;
+}
+
+.container-home{
+     display: flex;
+    margin-top: 100px;
+    flex-direction: column;
+    text-align: center;
+}
+
+.container-cwo{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    text-align: left;
+    padding: 10px;
+}
+
+.container-cwe{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: right;
+    text-align: right; 
+    padding: 10px;  
+}
+
+.container-cwe h4, .container-cwo h4{
+    font-family: 'Lobster';
+    font-size: 20px;
+    margin: 20px 20px 0px  20px;
+    color: #560000;
+}
+
+.foto-laki , .foto-cwe{
+    padding: 1%;
+    display: inline-block;
+    border: 4px solid #560000;
+    animation: fadeIn 1s forwards;
+}
+#Akira{
+    width: 145px;
+    height: 190px;
+}
+
+#Arnold{
+    width: 145px;
+    height: 160px;
+}
+
+#Akira, #Arnold{
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+    animation: fadeIn 1s forwards;
+}
+
+.data{
+    font-family: 'Jacques Francois';
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    margin: 10px 20px 0px  10px;
+    color: #560000;
+}
+
+.surah{
+    margin-top: 15px;
+}
+
+.surah p{
+    font-family: 'Jacques Francois';
+    color: #560000;
+    font-size: 15px;
+}
+
+.container-date{
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+    flex-direction: column;
+   align-items: center;
+}
+
+.container-resepsi{
+    margin: 55px 35px 25px 35px;
+    background-color: #ff8f8f9e;
+    text-align: center;
+    border-radius: 15px;
+    padding: 15px;
+}
+
+.container-resepsi p{
+    color: #560000;
+    font-family: 'Allura';
+    font-size: 15px;
+}
+
+.container-resepsi h4,  .container-resepsi h5{
+    color: #560000;
+    font-family: 'Kaisei Decol';
+    font-size: 15px;
+}
+
+.pembungkus-countdown{
+    color: #4B2204;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #6613136d;
+    padding: 5px 30px;
+    border-radius: 5px;
+}
+
+.pembungkus-countdown h2{
+    color: #560000;
+    font-family: 'Allura';
+    font-size: 30px;
+}
+
+.countdown{
+    color: #560000;
+    display: flex;
+    flex-direction: row;
+}
+
+.countdown-column{
+    display: flex;
+    flex-direction: column;
+    flex: 35%;
+    padding: 5px;
+    margin: 5px 5px 5px 5px;
+}
+
+.container-location{
+    display: flex;
+    justify-content: center;
+    margin-top: 45%;
+    flex-direction: column;
+   align-items: center;
+}
+
+.pembungkus1, .pembungkus2, .pembungkus3, .pembungkus4 {
+    background-color: #DE9191;
+    text-align: center;
+    width: 80px;
+    padding: 10px 0px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    margin: 10px;
+    font-size: 20px;
+}
+
+.time{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.lokasi{
+    margin-top: 40px;
+    padding: 5px;
+    border: 3px solid #560000;
+}
+
+.lokasi iframe{
+    width: 298px;
+    height: 235px;
+}
+
+.container-gallery{
+    display: flex;
+    justify-content: center;
+    margin-top: 33%;
+    flex-direction: column;
+   align-items: center;
+}
+
+.container-video video{
+    width: 280px;
+    height: 190px;
+    margin-bottom: 10px;
+    margin-top: -5px;
+}
+
+.container-photo-row{
+    display: flex;
+    padding: 3px;
+    flex-direction: row;
+}
+
+.container-photo-column{
+    display: flex;
+    flex: 50%;
+    padding: 3px;
+    flex-direction: column;
+}
+
+.container-photo-column img{
+    vertical-align: middle;
+    margin-top: 3px;
+    width: 100%;
+}
+
+.material {
+    display: none;
+    position: fixed;
+    z-index: 3;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    transition: 0.3s;
+    user-select: none;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+  .modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+  }
+  
+  .close {
+    position: absolute;
+    top: 50px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    cursor: pointer;
+  }
+
+.container-gift{
+    display: flex;
+    justify-content: center;
+    margin-top: 15%;
+    flex-direction: column;
+   align-items: center;
+}
+
+.gift{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: #560000;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0px;
+}
+
+.gift h2{
+    font-family: 'Allura';
+    font-size: 35px;
+    margin-top: -5px;
+}
+
+.gift h4{
+    font-family: 'Kaisei Decol';
+    font-size: 25px;
+    margin-top: -5px;
+}
+
+.gift p{
+    font-family: 'Kaisei Decol';
+    font-size: 15px;
+    margin-top: -5px;
+}
+
+#salin1{
+    background-color: #DE9191;
+    color: #560000;
+    font-size: 15px;
+    width: 75px;
+    height: 35px;
+    border-radius: 5px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.container-komentar{
+    margin-top: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.komentar{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ff8a8a84;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.komentar label{
+    margin: 10px;
+    color: #560000;
+}
+
+.komentar button{
+    background-color: #b84949;
+    color: #560000;
+    font-family: 'Kaisei Decol';
+    font-size: 15px;
+    border: none;
+    border-radius: 5px;
+    margin: 15px;
+    padding: 5px;
+}
+
+.komentar button:hover{
+    color: #b84949;
+    background-color: #560000;
+}
+
+.komentar form{
+    display: flex;
+    flex-direction: column;
+    border: none;
+}
+
+#ucapanOutput{
+    overflow-y: auto;
+    max-height: 250px;
+    background-color: #ffd5d5a9;
+    color: #560000;
+    font-family: 'Kaisei Decol';
+    border-radius: 5px;
+    text-wrap: wrap;
+}
+
+.container-penutup{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 250px;
+}
+
+.penutup{
+    background-color: #de919198;
+    color: #560000;
+    text-align: center;
+    padding-bottom: 100px;
+    padding-top: 25px;
+}
+
+.penutup p{
+    font-family: 'Kaisei Decol';
+    font-size: 13px;
+}
+
+.penutup h3{
+    font-family: 'Allura';
+    font-size: 25px;
+}
+.penutup a{
+   text-decoration: none;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px); 
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0)
+    }
+}
+
+
+@media only screen and (max-width: 1036px) {
+    .border-cover3{
+        right: 230px;
+    }
+    .border-cover1{
+        right: 230px;
+    }
+    
+}
+
+@media only screen and (max-width: 768px) {
+    .hiasan {
+        display: none !important; 
+    }
+
+    .judul-hiasan{
+        display: none !important;
+    }
+
+    .content-cover, #cover1 {
+        display: flex;
+        width: 100%; 
+        min-height: 100vh;
+        margin: 0; 
+    }
+    .opening h2{
+        width: 100vw;
+    }
+    .border-cover3{
+        left: 20px;
+    }
+    .border-cover1{
+        left: 20px;
+    }
+    .border-cover1, .border-cover2, .border-cover3, .border-cover4{
+        width: 85px;
+        height: 85px;
+    }
+    .nav{
+        bottom: 10px;
+        right: 1%;
+        width: 90%;
+    }
+    #Akira{
+        width: 125px;
+        height: 140px;
+    }
+    
+    #Arnold{
+        width: 125px;
+        height: 140px;
+    }
+    .judul{
+        width: 100vw;
+        margin-top: 80px;
+    }
+    .container-komentar{
+        margin-top: 80px;
+    }
+    .container-gift{
+        margin-top: 80px;
+    }
+    .container-gallery{
+        margin-top: 20px;
+    }
+}
